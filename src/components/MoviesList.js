@@ -2,7 +2,6 @@ import React from 'react';
 
 import Movie from './Movie';
 import classes from './MoviesList.module.css';
-import PropTypes from 'prop-types';
 
 const MovieList = (props) => {
   return (
@@ -11,16 +10,12 @@ const MovieList = (props) => {
         <Movie
           key={movie.id}
           title={movie.title}
-          releaseDate={movie.releaseDate}
+          releaseDate={movie.release}
           openingText={movie.openingText}
         />
       ))}
     </ul>
   );
-};
-
-MovieList.propTypes = {
-  movies: PropTypes.array.isRequired,
 };
 
 export default MovieList;

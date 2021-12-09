@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import classes from './Movie.module.css';
 import React from 'react';
+
+import classes from './Movie.module.css';
 
 const Movie = (props) => {
   return (
@@ -12,9 +12,4 @@ const Movie = (props) => {
   );
 };
 
-Movie.propTypes = {
-  title: PropTypes.string.isRequired,
-  releaseDate: PropTypes.string.isRequired,
-  openingText: PropTypes.string.isRequired,
-};
 export default Movie;
