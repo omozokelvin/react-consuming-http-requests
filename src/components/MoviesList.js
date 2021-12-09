@@ -1,9 +1,8 @@
-// import PropTypes from 'prop-types';
-
 import React from 'react';
 
 import Movie from './Movie';
 import classes from './MoviesList.module.css';
+import PropTypes from 'prop-types';
 
 const MovieList = (props) => {
   return (
@@ -21,7 +20,7 @@ const MovieList = (props) => {
 };
 
 MovieList.propTypes = {
-  movies: React.element.required,
+  movies: PropTypes.array.isRequired,
 };
 
 export default MovieList;
